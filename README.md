@@ -32,8 +32,11 @@ ip-10-1-4-93.us-west-2.compute.internal
 
 8.) After successful execution of step above, execute script "2_setup_database_node" - This script will download and install required packages for MySQL and Java
 
-9.) After completing step 8, proceed with step 9, execution of script "3_setup_cm" - after script completes, cloudera manager should be installed with MySQL.
+9.) Modify file "cm.host" and add IP/Hostname of Cloudera manager.
+        Note: Install cloudera manager on same hosts where MySQL is installed.
 
-10.) Execute step 10 after step #9 - execute script "4_start_cm" and this will start "cloudera manager."
+10.) After completing step 8, proceed with step 9, execution of script "3_setup_cm" - after script completes, cloudera manager should be installed with MySQL.
 
-11.) Execute script "5_check_cm_rest" - This script will executes REST API to cloudera manager.
+11.) Execute step 10 after step #9 - execute script "4_start_cm" and this will start "cloudera manager."
+
+12.) Execute script "5_check_cm_rest" - This script will executes REST API to cloudera manager.
